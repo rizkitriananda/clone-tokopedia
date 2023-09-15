@@ -1,0 +1,1739 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clone Tokopedia</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="../img/lainnya/pngegg.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="navbar-fixed">
+        <footer>
+          <div class="tokped">
+            <img src="../img/e5b8438b.svg" alt="" />
+          </div>
+          <p class="kategori">Kategori</p>
+          <svg id="svg" xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+            />
+          </svg>
+          <input type="text" class="search" placeholder="Cari apa hayoo" />
+          <div class="menu">
+            <div class="shopping">
+              <img src="../img/cart-shopping-solid.svg" alt="" />
+            </div>
+            <div class="bell">
+              <img src="../img/bell-solid.svg" alt="" />
+            </div>
+            <div class="email">
+              <img src="../img/envelope-solid.svg" alt="" />
+            </div>
+          </div>
+          <div class="right">
+            <div class="line-vertical"></div>
+            <div class="shop">
+              <img src="../img/shop-solid.svg" alt="" width="25" height="25" />
+              <p>Toko</p>
+            </div>
+            <div class="profil">
+              <img src="../img/footer/profil.jpg" alt="" width="25" height="25" />
+              <p>Anon....</p>
+            </div>
+          </div>
+        </footer>
+
+        <nav>
+          <ul class="navbar">
+            <li>Tas Eiger</li>
+            <li>Speaker Pc</li>
+            <li>Sony A7iii</li>
+            <li>Samsung A52s</li>
+            <li>Dji Mini 3</li>
+            <li>Rog Phone 6</li>
+          </ul>
+          <div class="location">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="geo-alt" viewBox="0 0 16 16">
+              <path
+                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
+              />
+              <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+            </svg>
+            <p class="lok">Dikirim ke <b>Rumah Siapa?</b></p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="chevron-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </div>
+        </nav>
+      </div>
+
+      <button class="chat">
+        <div class="pesan">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+            <defs>
+              <linearGradient id="a" x1="100%" x2="0%" y1="38.578%" y2="38.578%">
+                <stop offset="0%" stop-color="#07d620" />
+                <stop offset="100%" stop-color="#03ac0e" />
+              </linearGradient>
+            </defs>
+            <path
+              fill="url(#a)"
+              fill-rule="evenodd"
+              d="M19.2 11.8H8.8c-.715 0-1.3-.585-1.3-1.3s.585-1.3 1.3-1.3h10.4c.715 0 1.3.585 1.3 1.3s-.585 1.3-1.3 1.3M12.7 17H8.8c-.715 0-1.3-.585-1.3-1.3s.585-1.3 1.3-1.3h3.9c.715 0 1.3.585 1.3 1.3s-.585 1.3-1.3 1.3m5.2-13h-7.8A9.13 9.13 0 0 0 1 13.1c0 3.61 2.136 6.737 5.2 8.206v3.45c0 1.43.828 1.773 1.838.762l3.32-3.32H17.9a9.13 9.13 0 0 0 9.1-9.1A9.13 9.13 0 0 0 17.9 4"
+            />
+          </svg>
+          <h3>Chat</h3>
+        </div>
+      </button>
+
+      <div class="promo">
+        <img src="../img/lainnya/promo.webp" alt="" />
+      </div>
+
+      <main>
+        <article class="rows2">
+          <div class="pilihan">
+            <h2>Kategori Pilihan</h2>
+            <div class="opsi">
+              <img src="../img/bag.webp" alt="" width="120" height="130" class="card1" />
+              <img src="../img/snack.webp" alt="" width="120" height="130" class="card2" />
+              <img src="../img/shoes.webp" alt="" width="120" height="130" class="card3" />
+              <img src="../img/figure.webp" alt="" width="120" height="130" class="card4" />
+            </div>
+          </div>
+
+          <div class="topup">
+            <div class="judul">
+              <div class="h2">
+                <h2>Top Up & Tagihan</h2>
+              </div>
+              <div class="p">
+                <p>Lihat Semua</p>
+              </div>
+            </div>
+            <div class="boxright">
+              <div class="pilihandbtn">
+                <div class="pilih">
+                  <div class="btn1">
+                    <a href="" class="pulsa">Pulsa</a>
+                  </div>
+                  <div class="btn2">
+                    <a href="" class="paketdata"
+                      ><p class="p1">Paket</p>
+                      <p class="p2">Data</p></a
+                    >
+                  </div>
+                  <div class="btn3">
+                    <a href="" class="flight">Flight</a>
+                  </div>
+                  <div class="btn4">
+                    <a href="" class="pln">Listrik <br />PLN</a>
+                  </div>
+                </div>
+                <div class="btn-lainnya">
+                  <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                      <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="hp-nomin">
+                <div class="nohp">
+                  <h3>Nomor Telepon</h3>
+                  <input type="text" class="input-hp" />
+                </div>
+
+                <div class="nomin">
+                  <h3>Nominal</h3>
+                  <input type="text" class="input-nominal" />
+                </div>
+
+                <div class="btn-beli">
+                  <button type="submit">Beli</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Navbar Bawah -->
+        <article class="rows3">
+          <div class="navbar-bawah">
+            <div class="nav-1">
+              <img src="../img/kategori/Kategori.png" alt="" />
+              <p>Kategori</p>
+            </div>
+            <div class="nav-2">
+              <img src="../img/kategori/Hp & Tablet.png" alt="" />
+              <p>Handphone & Tablet</p>
+            </div>
+            <div class="nav-3">
+              <img src="../img/kategori/Top Up DAn Tagihan.png" alt="" />
+              <p>Top-Up & Tagihan</p>
+            </div>
+            <div class="nav-4">
+              <img src="../img/kategori/Perawatan Hewan.png" alt="" />
+              <p>Perawatan Hewan</p>
+            </div>
+            <div class="nav-5">
+              <img src="../img/kategori/Travel.png" alt="" />
+              <p>Travel & Entertainment</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Baris 4 -->
+        <article class="rows4">
+          <footer>
+            <div class="judul">
+              <h2><b>Kejar Diskon Spesial</b></h2>
+            </div>
+            <div class="date"><p>Berakhir dalam</p></div>
+            <div class="timer">
+              <div class="jam">01</div>
+              <div class="titikdua">:</div>
+              <div class="menit">25</div>
+              <div class="titikdua">:</div>
+              <div class="detik">30</div>
+            </div>
+
+            <div class="lihatsemua">
+              <p>Lihat Semua</p>
+            </div>
+          </footer>
+          <main class="content">
+            <div class="kejardiskon">
+              <img src="../img/lainnya/diskonpng.webp" alt="" width="128" height="218" />
+            </div>
+
+            <div class="box-satu">
+              <div class="card satu">
+                <img src="../img/lainnya/card1.jpg" alt="" />
+                <div class="bawah">
+                  <div class="harga">
+                    <h3>Rp 52.445</h3>
+                    <div class="diskon">
+                      <div class="kiri">15%</div>
+                      <div class="potongan">Rp 61.700</div>
+                    </div>
+                  </div>
+                  <div class="progres">
+                    <div></div>
+                  </div>
+                  <p>Lagi Diminati</p>
+                </div>
+              </div>
+
+              <div class="card dua">
+                <img src="../img/lainnya/card2.jpg" alt="" />
+                <div class="bawah">
+                  <div class="harga">
+                    <h3>Rp 78.000</h3>
+                    <div class="diskon">
+                      <div class="kiri">71%</div>
+                      <div class="potongan">Rp 269.000</div>
+                    </div>
+                  </div>
+                  <div class="progres">
+                    <div></div>
+                  </div>
+                  <p>Tersedia</p>
+                </div>
+              </div>
+
+              <div class="card tiga">
+                <img src="../img/lainnya/card3.jpg" alt="" />
+                <div class="bawah">
+                  <div class="harga">
+                    <h3>Rp 81.000</h3>
+                    <div class="diskon">
+                      <div class="kiri">19%</div>
+                      <div class="potongan">Rp 100.000</div>
+                    </div>
+                  </div>
+                  <div class="progres">
+                    <div></div>
+                  </div>
+                  <p>Tersedia</p>
+                </div>
+              </div>
+
+              <div class="card empat">
+                <img src="../img/lainnya/card4.jpg" alt="" />
+                <div class="bawah">
+                  <div class="harga">
+                    <h3>Rp 27.000</h3>
+                    <div class="diskon">
+                      <div class="kiri">73%</div>
+                      <div class="potongan">Rp 99.000</div>
+                    </div>
+                  </div>
+                  <div class="progres">
+                    <div></div>
+                  </div>
+                  <p>Tersedia</p>
+                </div>
+              </div>
+
+              <div class="card lima">
+                <img src="../img/lainnya/card5.jpg" alt="" />
+                <div class="bawah">
+                  <div class="harga">
+                    <h3>Rp 110.000</h3>
+                    <div class="diskon">
+                      <div class="kiri">50%</div>
+                      <div class="potongan">Rp 219.000</div>
+                    </div>
+                  </div>
+                  <div class="progres">
+                    <div></div>
+                  </div>
+                  <p>Tersedia</p>
+                </div>
+              </div>
+            </div>
+          </main>
+        </article>
+
+        <!-- Rows 5 -->
+        <article class="rows5">
+          <footer>
+            <div class="judul">
+              <div class="misi">
+                <h2><b>Misi Berhadiah</b></h2>
+              </div>
+              <div class="kupondiskon">
+                <p>Dapatkan Kupon Diskon s.d. 80rb!</p>
+              </div>
+              <div class="lihatsemua">
+                <p>Lihat Semua</p>
+              </div>
+            </div>
+          </footer>
+          <main class="content dua">
+            <div class="misiberhadiah">
+              <img src="../img/lainnya/kupondiskon.png" alt="" width="152" height="363" />
+            </div>
+
+            <div class="box dua">
+              <div class="card satu">
+                <img src="../img/lainnya/ip g 3 .png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      Lenovo Ideapad <br />
+                      Gaming 3 Ryzen 7 ...
+                    </p>
+                    <div class="harga"><h3>Rp 13.799.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">14%</div>
+                      <div class="potongan-harga">Rp 15.999.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Jakarta Timur</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card dua">
+                <img src="../img/lainnya/ip g3 rtx2050.png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      Lenovo Ideapad <br />
+                      Gaming 3 Ryzen 7 ...
+                    </p>
+                    <div class="harga"><h3>Rp 13.799.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">14%</div>
+                      <div class="potongan-harga">Rp 15.999.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Bandung</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card tiga">
+                <img src="../img/lainnya/acer nitro.png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      ACER Nitro 5 AN515-<br />
+                      58 i5-12500H 8/16 ...
+                    </p>
+                    <div class="harga"><h3>Rp 12.892.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">26%</div>
+                      <div class="potongan-harga">Rp 17.499.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Surabaya</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 250+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card empat">
+                <img src="../img/lainnya/6a91ade9-be09-443f-8cac-dbfb42f9bbe7.jpg" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      ASUS ROG Flow Z13<br />
+                      GGZ201ZA - 15-...
+                    </p>
+                    <div class="harga"><h3>Rp 20.999.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">13%</div>
+                      <div class="potongan-harga">Rp 23.999.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Tanggerang</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card lima">
+                <img src="../img/lainnya/rog zephyruspng.png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      Asus Rog Zephyrus<br />
+                      GA402RJ Ryzen 9 ...
+                    </p>
+                    <div class="harga"><h3>Rp 20.999.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">7%</div>
+                      <div class="potongan-harga">Rp 22.699.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Bekasi</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </article>
+
+        <!-- Rows 6 -->
+        <article class="rows6">
+          <header>
+            <div class="judul">
+              <div class="pencarian">
+                <h2><b>Berdasarkan pencarianmu</b></h2>
+              </div>
+              <div class="lihatsemua">
+                <p>Lihat Semua</p>
+              </div>
+            </div>
+          </header>
+
+          <main class="content tiga">
+            <div class="box tiga">
+              <div class="card satu">
+                <img src="../img/produk/056078b7-c8d8-4dc3-adbd-1d68a212fad9.jpg" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      Lenovo Ideapad <br />
+                      Gaming 3 Ryzen 7 ...
+                    </p>
+                    <div class="harga"><h3>Rp 13.799.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">14%</div>
+                      <div class="potongan-harga">Rp 15.999.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Jakarta Timur</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card dua">
+                <img src="../img/produk/2530404a-4b55-498c-96a9-c47988f0515f.jpg" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      Lenovo Ideapad <br />
+                      Gaming 3 Ryzen 7 ...
+                    </p>
+                    <div class="harga"><h3>Rp 13.799.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">14%</div>
+                      <div class="potongan-harga">Rp 15.999.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Bandung</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card tiga">
+                <img src="../img/produk/3a308cd3-b7be-4449-af69-c3cf0e3321f6.jpg" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      ACER Nitro 5 AN515-<br />
+                      58 i5-12500H 8/16 ...
+                    </p>
+                    <div class="harga"><h3>Rp 12.892.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">26%</div>
+                      <div class="potongan-harga">Rp 17.499.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Surabaya</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 250+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card empat">
+                <img src="../img/produk/64801d80-51e5-482a-90eb-223fb592fcd5.jpg" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      ASUS ROG Flow Z13<br />
+                      GGZ201ZA - 15-...
+                    </p>
+                    <div class="harga"><h3>Rp 20.999.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">13%</div>
+                      <div class="potongan-harga">Rp 23.999.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Tanggerang</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card lima">
+                <img src="../img/produk/76a43cb3-2959-47f5-8c23-9ddddc34e778.jpg" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      Asus Rog Zephyrus<br />
+                      GA402RJ Ryzen 9 ...
+                    </p>
+                    <div class="harga"><h3>Rp 20.999.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">7%</div>
+                      <div class="potongan-harga">Rp 22.699.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Bekasi</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card enam">
+                <img src="../img/lainnya/rog zephyruspng.png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      Asus Rog Zephyrus<br />
+                      GA402RJ Ryzen 9 ...
+                    </p>
+                    <div class="harga"><h3>Rp 20.999.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">7%</div>
+                      <div class="potongan-harga">Rp 22.699.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Bekasi</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </article>
+
+        <!-- Rows 7  Zona Promo-->
+        <article class="rows7">
+          <header>
+            <div class="judul">
+              <div class="misi">
+                <h2><b>Zona Promo Untukmu</b></h2>
+              </div>
+              <div class="lihatsemua">
+                <p>Lihat Semua</p>
+              </div>
+            </div>
+          </header>
+          <main class="content dua">
+            <div class="zonapromo">
+              <img src="../img/lainnya/zona promo.png" alt="" width="152" height="363" />
+            </div>
+
+            <div class="box dua">
+              <div class="card satu">
+                <img src="../img/lainnya/ip g 3 .png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      Lenovo Ideapad <br />
+                      Gaming 3 Ryzen 7 ...
+                    </p>
+                    <div class="harga"><h3>Rp 13.799.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">14%</div>
+                      <div class="potongan-harga">Rp 15.999.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Jakarta Timur</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card dua">
+                <img src="../img/lainnya/ip g3 rtx2050.png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      Lenovo Ideapad <br />
+                      Gaming 3 Ryzen 7 ...
+                    </p>
+                    <div class="harga"><h3>Rp 13.799.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">14%</div>
+                      <div class="potongan-harga">Rp 15.999.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Bandung</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card tiga">
+                <img src="../img/lainnya/acer nitro.png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      ACER Nitro 5 AN515-<br />
+                      58 i5-12500H 8/16 ...
+                    </p>
+                    <div class="harga"><h3>Rp 12.892.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">26%</div>
+                      <div class="potongan-harga">Rp 17.499.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Surabaya</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 250+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card empat">
+                <img src="../img/lainnya/6a91ade9-be09-443f-8cac-dbfb42f9bbe7.jpg" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      ASUS ROG Flow Z13<br />
+                      GGZ201ZA - 15-...
+                    </p>
+                    <div class="harga"><h3>Rp 20.999.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">13%</div>
+                      <div class="potongan-harga">Rp 23.999.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Tanggerang</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card lima">
+                <img src="../img/lainnya/rog zephyruspng.png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      Asus Rog Zephyrus<br />
+                      GA402RJ Ryzen 9 ...
+                    </p>
+                    <div class="harga"><h3>Rp 20.999.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">7%</div>
+                      <div class="potongan-harga">Rp 22.699.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Bekasi</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </article>
+
+        <!-- Rows 8 Belanja Suka-Suka -->
+        <article class="rows8">
+          <header>
+            <div class="judul">
+              <div class="misi">
+                <h2><b>Belanja Suka-Suka</b></h2>
+              </div>
+              <div class="lihatsemua">
+                <p>Lihat Semua</p>
+              </div>
+            </div>
+          </header>
+          <main class="content dua">
+            <div class="belanjasukasuka">
+              <img src="../img/lainnya/belanja suka-suka.png" alt="" width="160" height="363" />
+            </div>
+
+            <div class="box dua">
+              <div class="card satu">
+                <img src="../img/lainnya/ip g 3 .png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      Lenovo Ideapad <br />
+                      Gaming 3 Ryzen 7 ...
+                    </p>
+                    <div class="harga"><h3>Rp 13.799.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">14%</div>
+                      <div class="potongan-harga">Rp 15.999.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Jakarta Timur</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card dua">
+                <img src="../img/lainnya/ip g3 rtx2050.png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      Lenovo Ideapad <br />
+                      Gaming 3 Ryzen 7 ...
+                    </p>
+                    <div class="harga"><h3>Rp 13.799.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">14%</div>
+                      <div class="potongan-harga">Rp 15.999.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Bandung</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card tiga">
+                <img src="../img/lainnya/acer nitro.png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      ACER Nitro 5 AN515-<br />
+                      58 i5-12500H 8/16 ...
+                    </p>
+                    <div class="harga"><h3>Rp 12.892.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">26%</div>
+                      <div class="potongan-harga">Rp 17.499.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Surabaya</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 250+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card empat">
+                <img src="../img/lainnya/6a91ade9-be09-443f-8cac-dbfb42f9bbe7.jpg" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      ASUS ROG Flow Z13<br />
+                      GGZ201ZA - 15-...
+                    </p>
+                    <div class="harga"><h3>Rp 20.999.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">13%</div>
+                      <div class="potongan-harga">Rp 23.999.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Tanggerang</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card lima">
+                <img src="../img/lainnya/rog zephyruspng.png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      Asus Rog Zephyrus<br />
+                      GA402RJ Ryzen 9 ...
+                    </p>
+                    <div class="harga"><h3>Rp 20.999.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">7%</div>
+                      <div class="potongan-harga">Rp 22.699.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Bekasi</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </article>
+
+        <!-- Promo brand -->
+        <div class="promobrand">
+          <div class="judul">
+            <h2><b>Promo brand pilihan</b></h2>
+          </div>
+          <img src="../img/lainnya/promobrandjpg.jpg" alt="" />
+        </div>
+
+        <div class="pemisah"></div>
+
+        <!-- Rows 9 -->
+        <article class="rows9">
+          <main class="content tiga">
+            <div class="box tiga">
+              <div class="card satu">
+                <img src="../img/lainnya/ip g 3 .png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      Lenovo Ideapad <br />
+                      Gaming 3 Ryzen 7 ...
+                    </p>
+                    <div class="harga"><h3>Rp 13.799.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">14%</div>
+                      <div class="potongan-harga">Rp 15.999.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Jakarta Timur</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card dua">
+                <img src="../img/lainnya/ip g3 rtx2050.png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      Lenovo Ideapad <br />
+                      Gaming 3 Ryzen 7 ...
+                    </p>
+                    <div class="harga"><h3>Rp 13.799.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">14%</div>
+                      <div class="potongan-harga">Rp 15.999.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Bandung</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card tiga">
+                <img src="../img/lainnya/acer nitro.png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      ACER Nitro 5 AN515-<br />
+                      58 i5-12500H 8/16 ...
+                    </p>
+                    <div class="harga"><h3>Rp 12.892.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">26%</div>
+                      <div class="potongan-harga">Rp 17.499.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Surabaya</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 250+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card empat">
+                <img src="../img/lainnya/6a91ade9-be09-443f-8cac-dbfb42f9bbe7.jpg" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      ASUS ROG Flow Z13<br />
+                      GGZ201ZA - 15-...
+                    </p>
+                    <div class="harga"><h3>Rp 20.999.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">13%</div>
+                      <div class="potongan-harga">Rp 23.999.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Tanggerang</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card lima">
+                <img src="../img/lainnya/rog zephyruspng.png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      Asus Rog Zephyrus<br />
+                      GA402RJ Ryzen 9 ...
+                    </p>
+                    <div class="harga"><h3>Rp 20.999.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">7%</div>
+                      <div class="potongan-harga">Rp 22.699.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Bekasi</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card enam">
+                <img src="../img/lainnya/rog zephyruspng.png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      Asus Rog Zephyrus<br />
+                      GA402RJ Ryzen 9 ...
+                    </p>
+                    <div class="harga"><h3>Rp 20.999.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">7%</div>
+                      <div class="potongan-harga">Rp 22.699.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Bekasi</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </article>
+
+        <!-- Rows 10 -->
+        <article class="rows10">
+          <main class="content tiga">
+            <div class="box tiga">
+              <div class="card satu">
+                <img src="../img/lainnya/ip g 3 .png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      Lenovo Ideapad <br />
+                      Gaming 3 Ryzen 7 ...
+                    </p>
+                    <div class="harga"><h3>Rp 13.799.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">14%</div>
+                      <div class="potongan-harga">Rp 15.999.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Jakarta Timur</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card dua">
+                <img src="../img/lainnya/ip g3 rtx2050.png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      Lenovo Ideapad <br />
+                      Gaming 3 Ryzen 7 ...
+                    </p>
+                    <div class="harga"><h3>Rp 13.799.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">14%</div>
+                      <div class="potongan-harga">Rp 15.999.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Bandung</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card tiga">
+                <img src="../img/lainnya/acer nitro.png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      ACER Nitro 5 AN515-<br />
+                      58 i5-12500H 8/16 ...
+                    </p>
+                    <div class="harga"><h3>Rp 12.892.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">26%</div>
+                      <div class="potongan-harga">Rp 17.499.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Surabaya</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 250+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card empat">
+                <img src="../img/lainnya/6a91ade9-be09-443f-8cac-dbfb42f9bbe7.jpg" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      ASUS ROG Flow Z13<br />
+                      GGZ201ZA - 15-...
+                    </p>
+                    <div class="harga"><h3>Rp 20.999.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">13%</div>
+                      <div class="potongan-harga">Rp 23.999.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Tanggerang</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card lima">
+                <img src="../img/lainnya/rog zephyruspng.png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      Asus Rog Zephyrus<br />
+                      GA402RJ Ryzen 9 ...
+                    </p>
+                    <div class="harga"><h3>Rp 20.999.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">7%</div>
+                      <div class="potongan-harga">Rp 22.699.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Bekasi</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card enam">
+                <img src="../img/lainnya/rog zephyruspng.png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      Asus Rog Zephyrus<br />
+                      GA402RJ Ryzen 9 ...
+                    </p>
+                    <div class="harga"><h3>Rp 20.999.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">7%</div>
+                      <div class="potongan-harga">Rp 22.699.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Bekasi</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </article>
+
+        <!-- Rows 11 -->
+        <article class="rows11">
+          <main class="content tiga">
+            <div class="box tiga">
+              <div class="card satu">
+                <img src="../img/lainnya/ip g 3 .png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      Lenovo Ideapad <br />
+                      Gaming 3 Ryzen 7 ...
+                    </p>
+                    <div class="harga"><h3>Rp 13.799.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">14%</div>
+                      <div class="potongan-harga">Rp 15.999.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Jakarta Timur</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card dua">
+                <img src="../img/lainnya/ip g3 rtx2050.png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      Lenovo Ideapad <br />
+                      Gaming 3 Ryzen 7 ...
+                    </p>
+                    <div class="harga"><h3>Rp 13.799.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">14%</div>
+                      <div class="potongan-harga">Rp 15.999.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Bandung</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card tiga">
+                <img src="../img/lainnya/acer nitro.png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      ACER Nitro 5 AN515-<br />
+                      58 i5-12500H 8/16 ...
+                    </p>
+                    <div class="harga"><h3>Rp 12.892.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">26%</div>
+                      <div class="potongan-harga">Rp 17.499.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Surabaya</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 250+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card empat">
+                <img src="../img/lainnya/6a91ade9-be09-443f-8cac-dbfb42f9bbe7.jpg" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      ASUS ROG Flow Z13<br />
+                      GGZ201ZA - 15-...
+                    </p>
+                    <div class="harga"><h3>Rp 20.999.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">13%</div>
+                      <div class="potongan-harga">Rp 23.999.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Tanggerang</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card lima">
+                <img src="../img/lainnya/rog zephyruspng.png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      Asus Rog Zephyrus<br />
+                      GA402RJ Ryzen 9 ...
+                    </p>
+                    <div class="harga"><h3>Rp 20.999.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">7%</div>
+                      <div class="potongan-harga">Rp 22.699.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Bekasi</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card enam">
+                <img src="../img/lainnya/rog zephyruspng.png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      Asus Rog Zephyrus<br />
+                      GA402RJ Ryzen 9 ...
+                    </p>
+                    <div class="harga"><h3>Rp 20.999.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">7%</div>
+                      <div class="potongan-harga">Rp 22.699.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Bekasi</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </article>
+
+        <!-- Rows 11 -->
+        <article class="rows12">
+          <main class="content tiga">
+            <div class="box tiga">
+              <div class="card satu">
+                <img src="../img/lainnya/ip g 3 .png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      Lenovo Ideapad <br />
+                      Gaming 3 Ryzen 7 ...
+                    </p>
+                    <div class="harga"><h3>Rp 13.799.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">14%</div>
+                      <div class="potongan-harga">Rp 15.999.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Jakarta Timur</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card dua">
+                <img src="../img/lainnya/ip g3 rtx2050.png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      Lenovo Ideapad <br />
+                      Gaming 3 Ryzen 7 ...
+                    </p>
+                    <div class="harga"><h3>Rp 13.799.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">14%</div>
+                      <div class="potongan-harga">Rp 15.999.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Bandung</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 100+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card tiga">
+                <img src="../img/lainnya/acer nitro.png" alt="" />
+                <div class="bawah">
+                  <div class="deskripsi">
+                    <p>
+                      ACER Nitro 5 AN515-<br />
+                      58 i5-12500H 8/16 ...
+                    </p>
+                    <div class="harga"><h3>Rp 12.892.000</h3></div>
+                    <div class="potongan">
+                      <div class="diskon">26%</div>
+                      <div class="potongan-harga">Rp 17.499.000</div>
+                    </div>
+                    <div class="toko">
+                      <div class="official">
+                        <img src="../img/lainnya/official store.png" alt="" />
+                      </div>
+                      <p>Surabaya</p>
+                    </div>
+                    <div class="jual">
+                      <div class="rating">
+                        <img src="../img/lainnya/icons8-star-filled-50.png" alt="" />
+                        <p>5.0</p>
+                      </div>
+                      <div class="garis"></div>
+                      <div class="terjual"><p>Terjual 250+</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </article>
+
+        <div class="muatlebih">
+          <button type="button">
+            <span>Muat Lebih Banyak</span>
+          </button>
+        </div>
+
+        <div class="thankyou">
+          <h1>Thank You</h1>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

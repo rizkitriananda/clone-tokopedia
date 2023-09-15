@@ -1,0 +1,1116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Open Sauce One Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Open Sauce One Regular"),
+    url("../font/OpenSauceOne-Regular.woff") format("woff");
+}
+
+body {
+  background-color: #ffffff;
+  font-size: 18px;
+}
+
+.container {
+  grid-template-rows: 1fr 1fr 10fr;
+  grid-template-areas: "footer" "nav" "main";
+}
+
+/* Navbar Fixed */
+.navbar-fixed {
+  width: 100%;
+  height: 100px;
+}
+
+/* Footer */
+footer {
+  width: 1295px;
+  margin: 0 auto;
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 10px 5px 7px 5px;
+  z-index: 99999;
+  position: fixed;
+  left: 22px;
+  background-color: #ffffff;
+}
+
+footer .tokped {
+  margin-left: 10px;
+  width: 145px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+footer .kategori {
+  font-family: "Open Sauce One Regular";
+  font-size: 0.8rem;
+  width: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -53px;
+  color: #aeaeae;
+}
+
+#svg {
+  position: absolute;
+  top: 22px;
+  left: 282px;
+  width: 20px;
+}
+
+footer .search {
+  width: 545.64px;
+  height: 36px;
+  border: none;
+  margin-left: -180px;
+  margin-top: 3px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding-left: 50px;
+  border: 1px solid #f3f4f5;
+}
+
+footer .search::placeholder {
+  font-size: 1rem;
+}
+
+footer .menu {
+  width: 144px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+
+footer .menu .shopping,
+.menu .bell,
+.menu .email {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+footer .menu .bell,
+.menu .email {
+  margin-left: 17px;
+}
+
+footer .menu .shopping:hover,
+.menu .bell:hover,
+.menu .email:hover {
+  background-color: #f3f4f5;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+footer .right {
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+
+footer .line-vertical {
+  border-right: 1px solid #f3f4f5;
+  width: 19px;
+  height: 36px;
+  margin: 8px 0 0 -54px;
+}
+
+footer .right .shop {
+  display: flex;
+  margin: 3px 0 0 20px;
+  font-family: "Open Sauce One Regular";
+  font-size: 0.8rem;
+  align-items: center;
+  width: 92.41px;
+  height: 36px;
+  padding-left: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+footer .right .profil {
+  display: flex;
+  margin: 3px 0 0 20px;
+  font-family: "Open Sauce One Regular";
+  font-size: 0.8rem;
+  align-items: center;
+  width: 108.71px;
+  height: 36px;
+  padding-left: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+footer .right .shop p,
+footer .right .profil p {
+  padding-left: 10px;
+  font-size: 1rem;
+}
+
+footer .right .profil img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+footer .right .shop:hover,
+footer .right .profil:hover {
+  border-radius: 4px;
+  background-color: #f3f4f5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+footer .right .shop:hover p,
+footer .right .profil:hover p {
+  color: #03ac0e;
+}
+/* Footer Akhir */
+
+/* NavBar */
+nav {
+  margin-top: 58px;
+  height: 39px;
+  display: flex;
+  position: fixed;
+  z-index: 99999;
+  box-shadow: 0 5px 10px 2px #f6f6f6;
+  background-color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  list-style: none;
+  font-size: 0.9rem;
+  font-family: "Open Sauce One Regular";
+  padding-left: 10px;
+  margin-left: 290px;
+}
+
+.navbar li {
+  margin-top: 10px;
+  margin-right: 20px;
+  color: #bec0c2;
+  cursor: pointer;
+}
+
+.navbar li:hover {
+  color: #03ac0e;
+}
+
+nav .location {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  margin-left: 200px;
+  font-family: "Open Sauce One Regular";
+  font-size: 0.9rem;
+}
+
+.location .lok {
+  margin: 0 5px 0 5px;
+}
+/* Navbar Akhir */
+
+/* Chat */
+.chat {
+  position: fixed;
+  padding: 8px 20px;
+  right: 75px;
+  bottom: 96px;
+  z-index: 99999;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px 0 #bfc9d9;
+  font-family: "Open Sauce One Regular";
+  background-color: #ffffff;
+  color: #03ac0e;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.chat .pesan {
+  display: flex;
+  width: 80px;
+  height: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.chat .pesan h3 {
+  margin-left: 8px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.chat:hover {
+  background-color: rgb(229, 231, 233);
+}
+/* Chat Akhir */
+
+/* Promo */
+.promo {
+  margin-top: 40px;
+  margin-left: 73px;
+}
+
+.promo img {
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+/* Row 2 */
+.rows2 {
+  display: flex;
+  width: 1208px;
+  height: 310px;
+  margin: 20px auto;
+  padding: 24px 24px 35px 24px;
+  box-sizing: border-box;
+  border-top: 1px solid rgb(229, 231, 233);
+  border-right: 1px solid rgb(229, 231, 233);
+  border-left: 1px solid rgb(229, 231, 233);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-family: "Open Sauce One Regular";
+}
+
+.pilihan {
+  width: 600.5px;
+}
+
+.pilihan h2 {
+  margin-bottom: 25px;
+  color: #000000;
+}
+
+.pilihan img {
+  border-radius: 10px;
+  border: 1px solid #aeaeae;
+  margin-right: 18.8px;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.topup {
+  width: 580px;
+}
+
+.topup .judul {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.topup .boxright {
+  border: 1px solid rgb(229, 231, 233);
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.judul .h2 {
+  font-size: 1.1rem;
+}
+
+.judul .p {
+  color: #03ac0e;
+  font-weight: 600;
+  height: 18px;
+  margin: 8px 0 0 10px;
+  cursor: pointer;
+}
+
+.pilihandbtn {
+  display: flex;
+  height: 55px;
+}
+
+.topup .pilih {
+  background-color: #a7c1e9;
+  display: flex;
+  overflow: hidden;
+}
+
+.pilih .btn1,
+.btn2,
+.btn3,
+.btn4 {
+  width: 130px;
+  height: 54px;
+  border-bottom: 1px solid rgb(229, 231, 233);
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pilih .btn1 a,
+.btn2 a,
+.btn3 a,
+.btn4 a {
+  text-decoration: none;
+  color: #716f7a;
+  font-weight: bold;
+}
+
+.pilih .btn2 .p2 {
+  margin-left: 5px;
+}
+
+.pilih .btn1:hover,
+.pilih .btn2:hover,
+.pilih .btn3:hover,
+.pilih .btn4:hover {
+  border-bottom: 5px solid #03ac0e;
+}
+
+.btn-lainnya button {
+  width: 50px;
+  height: 55px;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid rgb(229, 231, 233);
+  border-left: 1px solid rgb(229, 231, 233);
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.boxright .hp-nomin {
+  display: flex;
+  width: 535px;
+  margin: 20px 0px 20px 15px;
+}
+
+.hp-nomin .nohp,
+.hp-nomin .nomin {
+  width: 211px;
+}
+
+.hp-nomin .nohp {
+  margin-right: 13px;
+}
+
+.hp-nomin .nomin {
+  margin-right: 13px;
+}
+
+.hp-nomin .btn-beli {
+  width: 84px;
+}
+
+.hp-nomin .btn-beli button {
+  width: 84px;
+  height: 45px;
+  margin-top: 26px;
+  padding: 5px 8px 5px 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #716f7a;
+  background-color: #e4ebf5;
+  border: none;
+}
+
+.boxright .hp-nomin h3,
+.nomin h3 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  color: #6d7588;
+}
+
+.hp-nomin .input-hp,
+.input-nominal {
+  width: 204px;
+  height: 43px;
+  border: 1px solid #e9edf2;
+}
+
+.hp-nomin input,
+.hp-nomin button {
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+/* Navbar Bawah */
+.navbar-bawah {
+  display: flex;
+  justify-content: space-evenly;
+  width: 1206px;
+  margin: -20px 0 0 71px;
+  cursor: pointer;
+  border-left: 1px solid rgb(229, 231, 233);
+  border-right: 1px solid rgb(229, 231, 233);
+  border-bottom: 1px solid rgb(229, 231, 233);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.navbar-bawah .nav-1,
+.nav-2,
+.nav-3,
+.nav-4,
+.nav-5 {
+  display: flex;
+  padding: 7px 12px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(229, 231, 233);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.navbar-bawah img {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+.navbar-bawah p {
+  font-size: 1.2rem;
+  font-family: "Open Sauce One Regular";
+}
+
+.navbar-bawah .nav-1:hover,
+.nav-2:hover,
+.nav-3:hover,
+.nav-4:hover,
+.nav-5:hover {
+  background-color: rgb(229, 231, 233);
+}
+/* Navbar Bawah akhir */
+
+/* Rows 4 */
+.rows4 {
+  width: 1206px;
+  margin: 43px auto;
+}
+
+.rows4 footer {
+  width: 1206px;
+  border-top: 1px solid rgb(229, 231, 233);
+  padding-top: 28px;
+  box-sizing: border-box;
+}
+
+.rows4 footer .judul {
+  margin-top: 2px;
+}
+
+.rows4 footer .judul h2 {
+  width: 237px;
+  margin: 10px 13px 0 -5px;
+  font-size: 1.5rem;
+  font-family: "Open Sauce One Regular";
+}
+
+.rows4 footer .date {
+  width: 116px;
+  font-size: 1rem;
+  font-family: "Open Sauce One Regular";
+}
+
+.rows4 footer .date p {
+  margin-top: 20px;
+}
+
+.rows4 footer .timer {
+  width: 167px;
+  display: flex;
+  margin-left: -120px;
+}
+
+.timer .jam,
+.timer .menit,
+.timer .detik {
+  width: 39px;
+  height: 39px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: white;
+  margin: 0 6px;
+  background-color: #f94d63;
+  font-weight: bold;
+  font-family: "Open Sauce One Regular";
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.timer .titikdua {
+  width: 4px;
+  height: 23px;
+  margin-top: 8.5px;
+  font-weight: bold;
+  color: #f94d63;
+}
+
+.rows4 footer .lihatsemua {
+  width: 100px;
+  margin: 20px 0 0 -188px;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Open Sauce One Regular";
+  color: #03ac0e;
+}
+
+.content {
+  width: 1206px;
+  margin-top: 20px;
+  position: relative;
+  font-family: "Open Sauce One Regular";
+}
+
+.content .kejardiskon {
+  width: 290px;
+  height: 370px;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #00ae2d;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.content .kejardiskon img {
+  margin-left: 34px;
+  object-fit: cover;
+}
+
+.content .box-satu {
+  width: 1006px;
+  display: flex;
+  position: absolute;
+  top: 34.5px;
+  left: 200px;
+}
+
+.content .box-satu .card,
+.content .box.dua .card,
+.content .box.tiga .card {
+  background-color: #fff;
+}
+
+.content .box-satu .card.satu,
+.box-satu .card.dua,
+.box-satu .card.tiga,
+.box-satu .card.empat,
+.box.dua .card.satu,
+.box.dua .card.dua,
+.box.dua .card.tiga,
+.box.dua .card.empat,
+.box.tiga .card.satu,
+.box.tiga .card.dua,
+.box.tiga .card.tiga,
+.box.tiga .card.empat,
+.box.tiga .card.lima {
+  width: 180px;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+.content .box-satu .card:hover,
+.box.dua .card:hover,
+.box.tiga .card:hover {
+  background-color: rgb(229, 231, 233);
+}
+
+.content .box-satu .card,
+.rows5 .box.dua .card,
+.rows6 .box.tiga .card,
+.rows7 .box.dua .card,
+.rows8 .box.dua .card,
+.rows9 .box.tiga .card,
+.rows10 .box.tiga .card,
+.rows11 .box.tiga .card,
+.rows12 .box.tiga .card {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.content .box-satu .card img,
+.box.dua img,
+.box.tiga .card img {
+  width: 180px;
+  height: 180px;
+}
+
+.box-satu .card .bawah {
+  margin-left: 10px;
+}
+
+.content .box-satu .card h3,
+.box.dua .harga h3,
+.box.tiga .harga h3,
+.rows8 .box.dua .harga h3 {
+  font-size: 1rem;
+  margin: 6px 0 0 0;
+}
+
+.box-satu .card .bawah .harga .diskon {
+  display: flex;
+  align-items: center;
+}
+
+.box-satu .card .bawah .harga .diskon .kiri,
+.box.dua .diskon,
+.box.tiga .diskon {
+  width: 32px;
+  height: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 4px 20px 0;
+  border-radius: 3px;
+  color: #f94d63;
+  font-size: 0.7rem;
+  font-weight: bold;
+  background-color: #ffdbe2;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.box-satu .card .bawah .harga .diskon .potongan {
+  margin: -7px 0 0 1px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-decoration: line-through;
+  color: #8f839f;
+}
+
+.box-satu .card .bawah .progres {
+  width: 157px;
+  height: 4px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #e5e7e9;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.box-satu .card.satu .bawah .progres div {
+  width: 100px;
+  height: 4px;
+  background-color: #ef144a;
+}
+
+.box-satu .card.dua .bawah .progres div,
+.card.tiga .bawah .progres div,
+.card.empat .bawah .progres div,
+.card.lima .bawah .progres div {
+  width: 40px;
+  height: 4px;
+  background-color: #ef144a;
+}
+
+.box-satu .card .bawah p {
+  margin: 5px 0 15px 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #707d94;
+}
+/* Rows 4 akhir */
+
+/* Rows 5 */
+.rows5 {
+  width: 1206px;
+  margin: 43px auto;
+  position: relative;
+  font-family: "Open Sauce One Regular";
+}
+
+.rows5 footer,
+.rows6 header,
+.rows7 header,
+.rows8 header {
+  width: 1206px;
+  border-top: 1px solid rgb(229, 231, 233);
+  padding-top: 28px;
+  box-sizing: border-box;
+}
+
+.rows5 footer .judul,
+.rows6 header .judul,
+.rows7 header .judul,
+.rows8 header .judul {
+  display: flex;
+  margin-top: 2px;
+}
+
+.rows5 footer .judul h2 {
+  width: 170px;
+  margin: 11.5px 13px 0 -5px;
+  font-size: 1.5rem;
+}
+
+.rows5 footer .kupondiskon {
+  width: 260px;
+  margin: 20px 13px 0 2px;
+  font-size: 1rem;
+  color: #8f9299;
+}
+
+.rows5 footer .lihatsemua,
+.rows6 header .lihatsemua,
+.rows7 header .lihatsemua,
+.rows8 header .lihatsemua {
+  width: 107px;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #03ac0e;
+}
+
+.rows5 .content.dua .misiberhadiah {
+  width: 290px;
+  height: 450px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-image: linear-gradient(#00ff08, #009b0a);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.rows5 .content.dua .misiberhadiah img {
+  margin: 86.5px 0 0 12px;
+}
+
+.content.dua .box.dua {
+  width: 997px;
+  display: flex;
+  position: absolute;
+  top: 50px;
+  left: 210px;
+}
+
+.box.dua .bawah,
+.box.tiga .bawah {
+  margin-left: 11px;
+}
+
+.box.dua .card .bawah .deskripsi p,
+.box.tiga .card .bawah .deskripsi p {
+  font-size: 1rem;
+}
+
+.box.dua .card .potongan,
+.box.dua .rating,
+.box.dua .jual,
+.box.dua .card .toko,
+.box.tiga .card .potongan,
+.box.tiga .rating,
+.box.tiga .jual,
+.box.tiga .card .toko {
+  display: flex;
+}
+
+.box.dua .card .harga h3 {
+  margin-top: 10px;
+}
+
+.box.dua .potongan-harga,
+.box.tiga .potongan-harga {
+  margin: 15px 0 0 2px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-decoration: line-through;
+  color: #8f839f;
+}
+
+.box.dua .toko,
+.box.tiga .toko {
+  margin: -10px 0 0 0;
+}
+
+.box.dua .official img,
+.box.tiga .official img {
+  width: 18px;
+  height: 18px;
+  margin-left: -2px;
+}
+
+.box.dua .card .toko p,
+.box.tiga .card .toko p {
+  margin: -3px 0 0 5px;
+}
+
+.box.dua .rating img,
+.box.tiga .rating img {
+  width: 16px;
+  height: 16px;
+  margin: 1.5px 4px 0 0;
+}
+
+.box.dua .toko p,
+.box.dua .jual p,
+.box.dua .jual .terjual,
+.box.tiga .toko p,
+.box.tiga .jual p,
+.box.tiga .jual .terjual {
+  font-size: 0.8rem;
+  color: #8f839f;
+}
+
+.box.dua .jual,
+.box.tiga .jual {
+  margin-bottom: 12px;
+}
+
+.box.dua .jual .garis,
+.box.tiga .jual .garis {
+  width: 1px;
+  height: 12px;
+  margin: 4px 6px 0 6px;
+  border-right: 1px solid #8f839f;
+}
+
+/* Rows 6 */
+.rows6 {
+  width: 1206px;
+  margin: 43px auto;
+  font-family: "Open Sauce One Regular";
+}
+
+.rows6 .content.tiga .box.tiga,
+.rows9 .box.tiga,
+.rows10 .box.tiga,
+.rows11 .box.tiga,
+.rows12 .box.tiga {
+  display: flex;
+}
+
+.rows6 header .judul .pencarian {
+  margin: 11.5px 13px 0 0;
+  font-size: 1.1rem;
+}
+
+.rows6 .box.tiga .card.satu {
+  margin-left: 3px;
+}
+
+/* Rows 7 Zona Promo */
+.rows7 {
+  width: 1206px;
+  height: 500px;
+  margin: 43px auto;
+  position: relative;
+  font-family: "Open Sauce One Regular";
+}
+
+.rows7 header {
+  padding-bottom: 17px;
+}
+
+.rows7 header .judul .misi {
+  width: 280px;
+  margin: 10.3px 13px 0 0;
+  font-size: 1.1rem;
+}
+
+.rows7 .content.dua .zonapromo {
+  width: 290px;
+  height: 450px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-image: linear-gradient(#7fd037, #64ac13);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.rows7 .content.dua .zonapromo img {
+  margin-top: 60px;
+  margin-left: 12px;
+}
+
+/* Rows 8  */
+.rows8 {
+  width: 1206px;
+  margin: 43px auto;
+  font-family: "Open Sauce One Regular";
+}
+
+.rows8 header {
+  margin-top: 100px;
+}
+
+.rows8 header .judul .misi {
+  margin: 10.3px 13px 0 0;
+  font-size: 1.1rem;
+}
+
+.rows8 .belanjasukasuka {
+  width: 290px;
+  height: 450px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-image: linear-gradient(#c7112e, #6d2114);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.rows8 .belanjasukasuka img {
+  margin: 50px 0 0 10px;
+}
+
+/* promo brand */
+.promobrand {
+  width: 1206px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 45px;
+  font-family: "Open Sauce One Regular";
+  border-top: 1px solid rgb(229, 231, 233);
+}
+
+.promobrand img {
+  align-self: center;
+  border-radius: 15px;
+  margin-top: 26px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+/* Promo brand akhir */
+
+.pemisah {
+  width: 100%;
+  height: 10px;
+  margin: 60px 0 50px 0;
+  background-color: #e5e7e9;
+}
+
+/* Rows 9 */
+.rows9 {
+  width: 1206px;
+  margin: 0 auto;
+}
+
+.rows9 .box.tiga,
+.rows10 .box.tiga,
+.rows11 .box.tiga {
+  justify-content: center;
+}
+
+.rows10,
+.rows11,
+.rows12 {
+  width: 1206px;
+  margin: 35px auto;
+}
+
+/* Muat Lebih Banyak */
+.muatlebih {
+  width: 1206px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.muatlebih button {
+  width: 290px;
+  height: 52px;
+  cursor: pointer;
+  padding: 0 16px 0 16px;
+  border: 1px solid #03ac0e;
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.muatlebih button span {
+  width: 286px;
+  height: 22px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #03ac0e;
+}
+
+.muatlebih button:hover {
+  background-color: rgb(229, 231, 233);
+}
+
+.thankyou {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 50px 0;
+}
+
+.thankyou h1 {
+  letter-spacing: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #03ac0e;
+}
